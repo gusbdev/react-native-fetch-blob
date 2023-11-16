@@ -29,6 +29,6 @@ jobs:
           registry-url: "https://npm.pkg.github.com/"
 
       - name: Publish to public GitHub
-        run: npm publish --registry=https://npm.pkg.github.com/
+        run: npm publish --registry=https://npm.pkg.github.com/@gusbdev/
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_GITHUB_TOKEN }}
